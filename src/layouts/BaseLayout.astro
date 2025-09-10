@@ -1,211 +1,276 @@
 ---
-import ProductItem from '../components/ProductItem.astro'
+import ProductItem from "../components/ProductItem.astro";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ORC Nootbook</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-  <nav>
-    <div class="container">
-      <section id="title">
-        <div>ORC Notebook</div>
-      </section>
-      <section id="links">
-        <ul>
-          <li><a href="">Notebook</a></li>
-          <li><a href="">Brands</a></li>
-          <li><a href="">CPU ranking</a></li>
-          <li><a href="">GPU ranking</a></li>
-        </ul>
-      </section>
-      <section id="search">
-        <input type="search" placeholder="Search for products...">
-      </section>
-      <section id="account-links">
-        <ul>
-          <li><a href=""><img src="/img/shopping-cart.png" alt=""></a></li>
-          <li><a href=""><img src="/img/round-account-button-with-user-inside.png" alt=""></a></li>
-        </ul>
-      </section>
-    </div>
-  </nav>
-  <header>
-    <div class="container">
-      <section id="header-left">
-        <section id="header-title">
-          <h1>Find Clothes That Matches Your Style</h1>
-          <small>Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</small>
-          <div>
-            <a id="header-title-btn" href="">Shop Now</a>
-          </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ORC Nootbook</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div style="height: 2em; background-color: black;"></div>
+    <nav>
+      <div class="container">
+        <section id="title">
+          <div>ORC Notebook</div>
         </section>
-        <section id="header-stats">
+        <section id="links">
           <ul>
             <li>
-              <strong>200+</strong>
-              <small>International Brands</small>
+              <a href=""
+                ><img src="/img/news32.png" alt="" height="16px" /> News</a>
             </li>
             <li>
-              <strong>2,000+</strong>
-              <small>High-Quality Products</small>
+              <a href=""
+                ><img src="/img/laptop232.png" alt="" height="16px" /> Laptop</a>
             </li>
             <li>
-              <strong>30,000+</strong>
-              <small>Happy Customers</small>
+              <a href=""
+                ><img src="/img/brand32.png" alt="" height="16px" /> Brands</a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="/img/cpu32.png" alt="" height="16px" /> CPU ranking</a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="/img/gpu32.png" alt="" height="16px" /> GPU ranking</a>
             </li>
           </ul>
         </section>
-      </section>
-      <section id="header-img">
-        <img src="https://placehold.co/800x800" alt="">
-      </section>
-    </div>
-  </header>
-  <section id="brands">
-    <div class="container">
-      <img src="https://placehold.co/150x50" alt="">
-      <img src="https://placehold.co/150x50" alt="">
-      <img src="https://placehold.co/150x50" alt="">
-      <img src="https://placehold.co/150x50" alt="">
-      <img src="https://placehold.co/150x50" alt="">
-    </div>
-  </section>
-  <section id="new-arrivals">
-    <div class="container">
-      <h2>New Arrivals</h2>
-      <section id="new-arrivals-list">
-        <ProductItem name="Product Name" price="$99.99" star="4.8" img="https://placehold.co/200x200" />
-        <ProductItem name="Product Name" price="$99.99" star="4.8" img="https://placehold.co/200x200" />
-        <ProductItem name="Product Name" price="$99.99" star="4.8" img="https://placehold.co/200x200" />
-        <ProductItem name="Product Name" price="$99.99" star="4.8" img="https://placehold.co/200x200" />
-      </section>
-    </div>
-  </section>
-  <section id="dress-style">
-    <div class="container">
-      <h2>Browse By Dress Style</h2>
-      <section id="dress-style-list">
-        <div id="dress-style-list-casual" class="dress-style-list-item">
-          <strong>Casual</strong>
-          <!-- <img src="https://placehold.co/400x400" alt=""> -->
-        </div>
-        <div id="dress-style-list-formal" class="dress-style-list-item">
-          <strong>Formal</strong>
-          <!-- <img src="https://placehold.co/400x400" alt=""> -->
-        </div>
-        <div id="dress-style-list-party" class="dress-style-list-item">
-          <strong>Party</strong>
-          <!-- <img src="https://placehold.co/400x400" alt=""> -->
-        </div>
-        <div id="dress-style-list-gyms" class="dress-style-list-item">
-          <strong>Gyms</strong>
-          <!-- <img src="https://placehold.co/400x400" alt=""> -->
-        </div>
-      </section>
-    </div>
-  </section>
-  <section id="reviews">
-    <div class="container">
-      <h2>Our Happy Customers</h2>
-      <section id="reviews-items">
-        <section class="reviews-item">
-          <small>⭐⭐⭐⭐⭐</small>
-          <h3>Sarah M. ✅</h3>
-          <q>I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.</q>
+        <section id="search">
+          <input type="search" placeholder="🔍 Search for keyword..." />
         </section>
-        <section class="reviews-item">
-          <small>⭐⭐⭐⭐⭐</small>
-          <h3>Alex K. ✅</h3>
-          <q>Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.</q>
+        <section id="account-links">
+          <ul>
+            <li><a href=""><img src="/img/filtering.png" alt="" /></a></li>
+            <li><a href=""><img src="/img/statistics.png" alt="" /></a></li>
+          </ul>
         </section>
-        <section class="reviews-item">
-          <small>⭐⭐⭐⭐⭐</small>
-          <h3>Sarah M. ✅</h3>
-          <q>As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.</q>
-        </section>
-      </section>
-    </div>
-  </section>
-  <section id="newsletter">
-    <div class="container">
-      <p>Stay Upto Date About<br>Our Latest Offers</p>
-      <form>
-        <input type="email" placeholder="Enter your email address">
-        <button>Subscribe to Newsletter</button>
-      </form>
-    </div>
-  </section>
-  <footer>
-    <div class="container">
-      <section id="footer-top">
-        <section id="footer-brands">
-          <strong>ORC Notebook</strong>
-          <p>We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
-          <section>
-            <a href=""><img src="https://placehold.co/35x35" alt=""></a>
-            <a href=""><img src="https://placehold.co/35x35" alt=""></a>
-            <a href=""><img src="https://placehold.co/35x35" alt=""></a>
-            <a href=""><img src="https://placehold.co/35x35" alt=""></a>
+      </div>
+    </nav>
+    <header>
+      <div class="container">
+        <section id="header-left">
+          <section id="header-title">
+            <h1>Find Clothes That Matches Your Style</h1>
+            <small
+              >Browse through our diverse range of meticulously crafted
+              garments, designed to bring out your individuality and cater to
+              your sense of style.</small
+            >
+            <div>
+              <a id="header-title-btn" href="">Shop Now</a>
+            </div>
           </section>
-        </section>
-        <section id="footer-links">
-          <section>
-            <h3>Company</h3>
+          <section id="header-stats">
             <ul>
-              <li><a href="">About</a></li>
-              <li><a href="">Features</a></li>
-              <li><a href="">Works</a></li>
-              <li><a href="">Career</a></li>
-            </ul>
-          </section>
-          <section>
-            <h3>Help</h3>
-            <ul>
-              <li><a href="">Customer Support</a></li>
-              <li><a href="">Delivery Details</a></li>
-              <li><a href="">Terms & Conditions</a></li>
-              <li><a href="">Privacy Policy</a></li>
-            </ul>
-          </section>
-          <section>
-            <h3>FAQ</h3>
-            <ul>
-              <li><a href="">Account</a></li>
-              <li><a href="">Manage Deliveries</a></li>
-              <li><a href="">Orders</a></li>
-              <li><a href="">Payments</a></li>
-            </ul>
-          </section>
-          <section>
-            <h3>Resources</h3>
-            <ul>
-              <li><a href="">Free eBooks</a></li>
-              <li><a href="">Development Tutorial</a></li>
-              <li><a href="">How to - Blog</a></li>
-              <li><a href="">YouTube Playlist</a></li>
+              <li>
+                <strong>200+</strong>
+                <small>International Brands</small>
+              </li>
+              <li>
+                <strong>2,000+</strong>
+                <small>High-Quality Products</small>
+              </li>
+              <li>
+                <strong>30,000+</strong>
+                <small>Happy Customers</small>
+              </li>
             </ul>
           </section>
         </section>
-      </section>
-      <section id="footer-bottom">
-        <p>© 2025 ORC Notebook All rights reserved.</p>
-        <ul>
-          <li><img src="https://placehold.co/60x30" alt=""></li>
-          <li><img src="https://placehold.co/60x30" alt=""></li>
-          <li><img src="https://placehold.co/60x30" alt=""></li>
-          <li><img src="https://placehold.co/60x30" alt=""></li>
-          <li><img src="https://placehold.co/60x30" alt=""></li>
-        </ul>
-      </section>
-    </div>
-  </footer>
-</body>
+        <section id="header-img">
+          <img src="https://placehold.co/800x800" alt="" />
+        </section>
+      </div>
+    </header>
+    <section id="brands">
+      <div class="container">
+        <img src="https://placehold.co/150x50" alt="" />
+        <img src="https://placehold.co/150x50" alt="" />
+        <img src="https://placehold.co/150x50" alt="" />
+        <img src="https://placehold.co/150x50" alt="" />
+        <img src="https://placehold.co/150x50" alt="" />
+        <img src="https://placehold.co/150x50" alt="" />
+      </div>
+    </section>
+    <section id="new-arrivals">
+      <div class="container">
+        <h2>New Arrivals</h2>
+        <section id="new-arrivals-list">
+          <ProductItem
+            name="Product Name"
+            price="$99.99"
+            star="4.8"
+            img="https://placehold.co/200x200"
+          />
+          <ProductItem
+            name="Product Name"
+            price="$99.99"
+            star="4.8"
+            img="https://placehold.co/200x200"
+          />
+          <ProductItem
+            name="Product Name"
+            price="$99.99"
+            star="4.8"
+            img="https://placehold.co/200x200"
+          />
+          <ProductItem
+            name="Product Name"
+            price="$99.99"
+            star="4.8"
+            img="https://placehold.co/200x200"
+          />
+        </section>
+      </div>
+    </section>
+    <section id="dress-style">
+      <div class="container">
+        <h2>Browse By Dress Style</h2>
+        <section id="dress-style-list">
+          <div id="dress-style-list-casual" class="dress-style-list-item">
+            <strong>Casual</strong>
+            <!-- <img src="https://placehold.co/400x400" alt=""> -->
+          </div>
+          <div id="dress-style-list-formal" class="dress-style-list-item">
+            <strong>Formal</strong>
+            <!-- <img src="https://placehold.co/400x400" alt=""> -->
+          </div>
+          <div id="dress-style-list-party" class="dress-style-list-item">
+            <strong>Party</strong>
+            <!-- <img src="https://placehold.co/400x400" alt=""> -->
+          </div>
+          <div id="dress-style-list-gyms" class="dress-style-list-item">
+            <strong>Gyms</strong>
+            <!-- <img src="https://placehold.co/400x400" alt=""> -->
+          </div>
+        </section>
+      </div>
+    </section>
+    <section id="reviews">
+      <div class="container">
+        <h2>Our Happy Customers</h2>
+        <section id="reviews-items">
+          <section class="reviews-item">
+            <small>⭐⭐⭐⭐⭐</small>
+            <h3>Sarah M. ✅</h3>
+            <q
+              >I'm blown away by the quality and style of the clothes I received
+              from Shop.co. From casual wear to elegant dresses, every piece
+              I've bought has exceeded my expectations.</q
+            >
+          </section>
+          <section class="reviews-item">
+            <small>⭐⭐⭐⭐⭐</small>
+            <h3>Alex K. ✅</h3>
+            <q
+              >Finding clothes that align with my personal style used to be a
+              challenge until I discovered Shop.co. The range of options they
+              offer is truly remarkable, catering to a variety of tastes and
+              occasions.</q
+            >
+          </section>
+          <section class="reviews-item">
+            <small>⭐⭐⭐⭐⭐</small>
+            <h3>Sarah M. ✅</h3>
+            <q
+              >As someone who's always on the lookout for unique fashion pieces,
+              I'm thrilled to have stumbled upon Shop.co. The selection of
+              clothes is not only diverse but also on-point with the latest
+              trends.</q
+            >
+          </section>
+        </section>
+      </div>
+    </section>
+    <section id="newsletter">
+      <div class="container">
+        <p>Stay Upto Date About<br />Our Latest Offers</p>
+        <form>
+          <input type="email" placeholder="Enter your email address" />
+          <button>Subscribe to Newsletter</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <section id="footer-top">
+          <section id="footer-brands">
+            <strong>ORC Notebook</strong>
+            <p>
+              We have clothes that suits your style and which you’re proud to
+              wear. From women to men.
+            </p>
+            <section>
+              <a href=""><img src="https://placehold.co/35x35" alt="" /></a>
+              <a href=""><img src="https://placehold.co/35x35" alt="" /></a>
+              <a href=""><img src="https://placehold.co/35x35" alt="" /></a>
+              <a href=""><img src="https://placehold.co/35x35" alt="" /></a>
+            </section>
+          </section>
+          <section id="footer-links">
+            <section>
+              <h3>Company</h3>
+              <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Works</a></li>
+                <li><a href="">Career</a></li>
+              </ul>
+            </section>
+            <section>
+              <h3>Help</h3>
+              <ul>
+                <li><a href="">Customer Support</a></li>
+                <li><a href="">Delivery Details</a></li>
+                <li><a href="">Terms & Conditions</a></li>
+                <li><a href="">Privacy Policy</a></li>
+              </ul>
+            </section>
+            <section>
+              <h3>FAQ</h3>
+              <ul>
+                <li><a href="">Account</a></li>
+                <li><a href="">Manage Deliveries</a></li>
+                <li><a href="">Orders</a></li>
+                <li><a href="">Payments</a></li>
+              </ul>
+            </section>
+            <section>
+              <h3>Resources</h3>
+              <ul>
+                <li><a href="">Free eBooks</a></li>
+                <li><a href="">Development Tutorial</a></li>
+                <li><a href="">How to - Blog</a></li>
+                <li><a href="">YouTube Playlist</a></li>
+              </ul>
+            </section>
+          </section>
+        </section>
+        <section id="footer-bottom">
+          <p>© 2025 ORC Notebook All rights reserved.</p>
+          <ul>
+            <li><img src="https://placehold.co/60x30" alt="" /></li>
+            <li><img src="https://placehold.co/60x30" alt="" /></li>
+            <li><img src="https://placehold.co/60x30" alt="" /></li>
+            <li><img src="https://placehold.co/60x30" alt="" /></li>
+            <li><img src="https://placehold.co/60x30" alt="" /></li>
+          </ul>
+        </section>
+      </div>
+    </footer>
+  </body>
 </html>
 
 <style>
@@ -222,9 +287,11 @@ import ProductItem from '../components/ProductItem.astro'
   #title {
     font-weight: bold;
     font-size: 2em;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+    align-items: center;
   }
-  #links ul, #account-links ul {
+  #links ul,
+  #account-links ul {
     display: flex;
     gap: 1em;
     margin: 0;
@@ -426,7 +493,8 @@ import ProductItem from '../components/ProductItem.astro'
       display: flex;
       flex-direction: column;
       gap: 0.5em;
-      input, button {
+      input,
+      button {
         padding: 0.5em 1em;
         border-radius: 9999px;
       }
@@ -447,7 +515,7 @@ import ProductItem from '../components/ProductItem.astro'
       font-size: 2em;
     }
     p {
-      color: rgb(97, 97, 97)
+      color: rgb(97, 97, 97);
     }
   }
   #footer-links {
@@ -489,7 +557,8 @@ import ProductItem from '../components/ProductItem.astro'
     }
   }
   @media (max-width: 768px) {
-    #links, #search {
+    #links,
+    #search {
       display: none;
     }
     #account-links {
