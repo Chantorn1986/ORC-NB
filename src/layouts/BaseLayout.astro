@@ -17,7 +17,7 @@ import ProductItem from "../components/ProductItem.astro";
     />
   </head>
   <body>
-    <div style="height: 2em; background-color: black;"></div>
+    <div style="height: 2em; background-color: #65b393;"></div>
     <nav>
       <div class="container">
         <section id="title">
@@ -69,7 +69,7 @@ import ProductItem from "../components/ProductItem.astro";
               your sense of style.</small
             >
             <div>
-              <a id="header-title-btn" href="">Shop Now</a>
+              <a id="header-title-btn" href="">Check Specs</a>
             </div>
           </section>
           <section id="header-stats">
@@ -90,69 +90,72 @@ import ProductItem from "../components/ProductItem.astro";
           </section>
         </section>
         <section id="header-img">
-          <img src="https://placehold.co/800x800" alt="" />
+          <img src="/img/800x800/NotebookGen003-800x800.png" alt="" />
         </section>
       </div>
     </header>
     <section id="brands">
       <div class="container">
-        <img src="https://placehold.co/150x50" alt="" />
-        <img src="https://placehold.co/150x50" alt="" />
-        <img src="https://placehold.co/150x50" alt="" />
-        <img src="https://placehold.co/150x50" alt="" />
-        <img src="https://placehold.co/150x50" alt="" />
-        <img src="https://placehold.co/150x50" alt="" />
+        <a href="https://www.advice.co.th/"><img src="/img/150x50/Advice-Brand150x50.png" alt="Advice" /></a>
+        <a href="https://www.bnn.in.th/th"><img src="/img/150x50/Banana-Brand150x50.png" alt="BaNANA IT" /></a>
+        <a href="https://www.jib.co.th"><img src="/img/150x50/Jib-Brand150x50.png" alt="JIB" /></a>
+        <a href="https://www.itcity.in.th"><img src="/img/150x50/ITcity-Brand150x50.png" alt="IT City" /></a>
+        <a href="https://ihavecpu.com/"><img src="/img/150x50/iHAVECPU-Brand150x50.png" alt="iHAVECPU" /></a>
       </div>
     </section>
     <section id="new-arrivals">
       <div class="container">
-        <h2>New Arrivals</h2>
+        <h2>แนะนำ Notebook รุ่นใหม่ล่าสุด</h2>
         <section id="new-arrivals-list">
           <ProductItem
             name="Product Name"
-            price="$99.99"
+            price="฿ 12,500"
             star="4.8"
             img="https://placehold.co/200x200"
+            date="กรกฎาคม 2025"
           />
           <ProductItem
             name="Product Name"
-            price="$99.99"
-            star="4.8"
+            price="฿ 17,600"
+            star="3.5"
             img="https://placehold.co/200x200"
+            date="กรกฎาคม 2025"
           />
           <ProductItem
             name="Product Name"
-            price="$99.99"
+            price="฿ 18,100"
             star="4.8"
             img="https://placehold.co/200x200"
+            date="กรกฎาคม 2025"
           />
           <ProductItem
             name="Product Name"
-            price="$99.99"
+            price="฿ 19,240"
             star="4.8"
             img="https://placehold.co/200x200"
+            date="กรกฎาคม 2025"
           />
         </section>
       </div>
     </section>
     <section id="dress-style">
       <div class="container">
-        <h2>Browse By Dress Style</h2>
+        <h2>รวมรีวิว Notebook / การ์ดจอ / เมนบอร์ด / อื่นๆ</h2>
         <section id="dress-style-list">
           <div id="dress-style-list-casual" class="dress-style-list-item">
-            <strong>Casual</strong>
+            <strong>CPU</strong>
             <!-- <img src="https://placehold.co/400x400" alt=""> -->
           </div>
           <div id="dress-style-list-formal" class="dress-style-list-item">
-            <strong>Formal</strong>
+            <strong>Notebook</strong>
             <!-- <img src="https://placehold.co/400x400" alt=""> -->
           </div>
           <div id="dress-style-list-party" class="dress-style-list-item">
-            <strong>Party</strong>
+            <strong>Mainboard</strong>
             <!-- <img src="https://placehold.co/400x400" alt=""> -->
           </div>
           <div id="dress-style-list-gyms" class="dress-style-list-item">
-            <strong>Gyms</strong>
+            <strong>GPU</strong>
             <!-- <img src="https://placehold.co/400x400" alt=""> -->
           </div>
         </section>
@@ -160,7 +163,7 @@ import ProductItem from "../components/ProductItem.astro";
     </section>
     <section id="reviews">
       <div class="container">
-        <h2>Our Happy Customers</h2>
+        <h2>รีวิวจากผู้ใช้งานจริง</h2>
         <section id="reviews-items">
           <section class="reviews-item">
             <small>⭐⭐⭐⭐⭐</small>
@@ -196,7 +199,7 @@ import ProductItem from "../components/ProductItem.astro";
     </section>
     <section id="newsletter">
       <div class="container">
-        <p>Stay Upto Date About<br />Our Latest Offers</p>
+        <p>Follow the latest news<br />Contact us</p>
         <form>
           <input type="email" placeholder="Enter your email address" />
           <button>Subscribe to Newsletter</button>
@@ -318,7 +321,7 @@ import ProductItem from "../components/ProductItem.astro";
     width: 100%;
   }
   header {
-    background-color: rgb(248, 239, 230);
+    background-color: #edfdf5;
   }
   header .container {
     display: flex;
@@ -349,8 +352,8 @@ import ProductItem from "../components/ProductItem.astro";
   #header-title-btn {
     margin-top: 1em;
     display: inline-block;
-    background-color: black;
-    color: white;
+    background-color: #65b393 ;
+    color:white;
     border-radius: 9999px;
     text-decoration: none;
     padding: 0.75em 2.5em;
@@ -386,7 +389,7 @@ import ProductItem from "../components/ProductItem.astro";
     justify-content: center;
     gap: 1em;
     padding: 1.25em;
-    background-color: black;
+    background-color: #65b393;
     img {
       max-width: 100%;
     }
@@ -407,7 +410,7 @@ import ProductItem from "../components/ProductItem.astro";
   }
   #dress-style .container {
     padding: 1em 2em;
-    background-color: rgb(240, 240, 240);
+    background-color: #edfdf5;
     margin: 1em auto;
     border-radius: 2em;
     h2 {
@@ -430,6 +433,7 @@ import ProductItem from "../components/ProductItem.astro";
       display: inline-block;
       padding: 1em;
       font-size: 1.5em;
+      color: black;
     }
   }
   #dress-style-list-casual {
@@ -478,7 +482,7 @@ import ProductItem from "../components/ProductItem.astro";
     transform: translateY(50%);
     display: flex;
     gap: 2em;
-    background-color: black;
+    background-color: #65b393;
     color: white;
     padding: 2em 3em;
     border-radius: 1.5em;
@@ -504,7 +508,7 @@ import ProductItem from "../components/ProductItem.astro";
     padding-top: 7em;
     padding-left: 0.75em;
     padding-right: 0.75em;
-    background-color: rgb(230, 230, 230);
+    background-color: #edfdf5;
   }
   #footer-top {
     display: flex;

@@ -1,5 +1,5 @@
 ---
-const { name, price, star, img } = Astro.props
+const { name, price, star, img ,date} = Astro.props
 ---
 
 <div class="product-item">
@@ -10,6 +10,7 @@ const { name, price, star, img } = Astro.props
     <small>{star}/5</small>
   </section>
   <strong>{price}</strong>
+  <small>{date}</small>
 </div>
 
 <style>
@@ -28,6 +29,7 @@ const { name, price, star, img } = Astro.props
     strong {
       display: inline-block;
       margin-top: 0.5em;
+      margin-bottom: 0.5em;
     }
   }
 </style>
